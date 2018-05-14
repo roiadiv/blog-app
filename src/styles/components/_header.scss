@@ -11,9 +11,31 @@
 }
 
 .header__title{
-    color:white;
+    color : white;
     text-decoration: none;//make the text clear the text dercoretion that now have under-line
     h1{
         margin: 0;//remove the margin in the Link Element
+    }
+}
+
+.header__title--subtitle{
+    color : lighten($color: #000000, $amount: 60%);
+    animation-name: fade-move;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes fade-move{
+    0%{
+        color:lighten($color: #000000, $amount: 0%);
+    }
+    100%{
+        color : lighten($color: #000000, $amount: 100%);
+        margin-left: 20px;
     }
 }

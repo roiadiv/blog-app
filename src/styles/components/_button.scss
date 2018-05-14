@@ -17,3 +17,22 @@
 .button--secondary{//modifer
     background: #888888;
 }
+
+.button--post{//modifer
+    background: #d44545;
+    border-radius: 3px ;
+    margin-left:27rem;
+}
+
+.button--save{//modifer
+    @extend .button--post;
+    margin-left:41rem;
+}
+
+.button--remove{//modifer
+    @extend .button--post;
+    margin-left:25%;
+    margin-top: 1%;
+    width: 50%;
+  
+}

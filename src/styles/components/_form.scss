@@ -4,6 +4,21 @@
     >*{//all children
         margin-bottom: $m-size; 
     }
+    
+}
+
+.form--post{
+    border:1px solid #cacccd;
+    height: 250px;
+    resize: vertical;
+    font-size: $font-size-large;
+    font-weight: 300;
+    font-size: 150%;
+    padding: $s-size;
+    margin-top: $s-size;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: auto;
 }
 
 .form__error{
